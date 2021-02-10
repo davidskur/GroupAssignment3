@@ -40,13 +40,13 @@ int main(int argc, char* argv[])
             // create new reader objects, get file info
             fileReader = new FileReadifierTurbo;
             if (fileSelection == 1){                 
-                WordGuessifier::RunGame(fileReader->GetWordList()); // Static method call. todo: research templates
+                WordGuessifier::GetWord(fileReader->GetWordList()); // Static method call. todo: research templates
             }
             else {
                 string path;
                 cout << "\nEnter a file path verbatim: ";
                 cin >> path;
-                WordGuessifier::RunGame(fileReader->GetWordList(path)); // overload
+                WordGuessifier::GetWord(fileReader->GetWordList(path)); // overload
             }
             // destroy reader object
             delete fileReader;
@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
             bool bPlayAgain;
             do {
                 bPlayAgain = false;
-                WordGuessifier::RunGame(wordArray); // another static method call
+                WordGuessifier::GetWord(wordArray); // another static method call
 
                 // check for another run
 		        string strResponse;
