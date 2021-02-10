@@ -17,7 +17,7 @@ public:
 	// constructor
 	FileReadifierTurbo() {};
 	// destructor
-	~FileReadifierTurbo() { wordFile.close(); } // TODO: Read more about destructors. This pry isn't needed.
+	~FileReadifierTurbo() { wordFile.close(); } // TODO: Read more about destructors. This body pry isn't needed.
 
     // current dir, included txt file
     vector<string> GetWordList() {
