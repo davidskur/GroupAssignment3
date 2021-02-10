@@ -59,18 +59,7 @@ int main(int argc, char* argv[])
             	cout << "\nEnter a string (" << (i+1) << " of 10): ";
             	cin >> wordArray[i];
             }
-            bool bPlayAgain;
-            do {
-                bPlayAgain = false;
-                WordGuessifier::GetWord(wordArray); // another static method call
-
-                // check for another run
-		        string strResponse;
-		        cout << "\nRun game again? (y/n) ";
-		        cin >> strResponse;
-		        if (strResponse == "y" || strResponse == "yes") bPlayAgain = true;
-
-            } while (bPlayAgain);
+            WordGuessifier::GetWord(wordArray); // another static method call
             break;
         }
         default:
