@@ -23,7 +23,7 @@ public:
         int wordIndex = rand() % words.size();
         RunGame(words[wordIndex]);
     }
-    static void RunGame(string wordToGuess) { // eventually will give additional guesses.
+    static void RunGame(string wordToGuess) { // eventually will give additional guesses. Just meeting requirements this week :D
         string hiddenWord(wordToGuess.length(), '*');
         cout << "\nYour word to guess: " << hiddenWord << endl;
         string guess;
